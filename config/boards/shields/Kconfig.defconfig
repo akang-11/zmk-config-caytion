@@ -1,0 +1,16 @@
+if SHIELD_CAYTION_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Caytion"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CAYTION_LEFT || SHIELD_CAYTION_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
